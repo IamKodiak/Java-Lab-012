@@ -1,0 +1,55 @@
+nouns:
+    -solar-system
+    -simulation
+    -planets
+    -sun
+    -mass (double)
+    -radius (double)
+    -gravity (double)
+    -period
+    -center
+    -coordinate
+    -position
+        -x,y = double
+    -point
+    -distance
+    -velocity (double)
+
+    verbs:
+    -create
+    -addPlanets
+    -movePlanets
+    -showPlanets
+    -have
+    -getPos
+    -getVel
+    -showPos
+
+    classes:
+    -Sun
+        -radius
+        -mass
+        -x
+        -y
+        -name
+    -Planet
+        -radius
+        -mass
+        -x
+        -y
+        -velocity x
+        -velocity y
+        -name
+        -toString
+            -x
+            -y
+            -name
+        -getx()
+        -gety()
+        -move(x,y)
+    -SolarSys
+        -AL<Planet>
+        -Sun theSun
+        -public movePlanets()
+        -public addPlanets(Planet)
+        -public addSun(Sun)
